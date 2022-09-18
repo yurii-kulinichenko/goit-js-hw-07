@@ -9,6 +9,6 @@ const galleryGrid = galleryItems.map((item) => {
 }).join('');
 gallery.insertAdjacentHTML('afterbegin', galleryGrid);
 
-let galleryBox = new SimpleLightbox('.gallery a', {captionsData: 'alt', captionsDelay: 250});
+let galleryBox = new SimpleLightbox('.gallery a', {captionsData: 'alt', captionDelay: 250});
 galleryBox.on('show.simplelightbox', open);
 
